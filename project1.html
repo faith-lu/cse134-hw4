@@ -4,6 +4,17 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles/main.css" />
         <title>Home - Faith Lu</title>
+        <script>
+            window.addEventListener('load', function() {
+                let canvas = document.getElementById('project_canvas');
+                let context = canvas.getContext('2d');
+                
+                context.strokeStyle = 'red';
+                context.strokeRect(50,50,100,50);
+                context.font = "24px Times New Roman";
+                context.fillText("Project 1", 60, 85);
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -17,24 +28,14 @@
                     <li><a href="/sandbox.html">Sandbox</a></li>
                 </ul>
             </nav>
+            <h1>Project 1</h1>
+            <hr />
         </header>
         <main>
-            <h1>Contact Form:</h1>
-            <form id="contact">
-                <fieldset>
-                    <legend>Input:</legend>
-                    <label for="first_name">First name:</label>
-                    <input id="first_name" type="text">
-                    <br />
-                    <label for="last_name">Last name:</label>
-                    <input id="last_name" type="text">
-                    <br />
-                    <label for="email">Email:</label>
-                    <input id="email" type="text">
-                    <br />
-                    <button type="button" form="contact">Reset</button>
-                </fieldset>
-            </form>
+            <canvas id="project_canvas" width="300" height="300">
+                <em>Canvas Supporting Browser Required</em>
+            </canvas>
+            <p>Canvas usage example.</p>
         </main>
         <footer>
 
