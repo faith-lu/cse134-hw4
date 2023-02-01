@@ -25,19 +25,45 @@
                     <legend>Input:</legend>
                     <label for="first_name">First name:</label>
                     <input id="first_name" type="text">
-                    <br />
+                    <br /><br />
                     <label for="last_name">Last name:</label>
                     <input id="last_name" type="text">
-                    <br />
-                    <label for="email">Email:</label>
-                    <input id="email" type="text">
-                    <br />
+                    <br /><br />
+                    <label for="topic">Choose a topic:</label>
+                    <input id="topic" list="topics">
+                    <datalist id="topics">
+                        <option value="SWE"></option>
+                        <option value="UI/UX Design"></option>
+                        <option value="Graphic Design"></option>
+                    </datalist>
+                    <br /><br />
+                    <label for="method">Choose a method of contact:</label>
+                    <select id="method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                    <br /><br />
+                    <label for="contact">Email or phone number:</label>
+                    <input id="contact" type="text">
+                    <br /><br />
+>                   <label for="message">Message:</label>
+                    <textarea id="message" rows="5" columns="200">
+                        Write your message here...
+                    </textarea>
+                    <br /><br />
                     <button type="button" form="contact">Reset</button>
                 </fieldset>
             </form>
         </main>
         <footer>
-
+            <hr />
+            <h3>Links</h3>
+            <ul>
+                <li><strong>Facebook</strong>: <a href="https://www.facebook.com/l.faithh/">l.faithh</a></li>
+                <li><strong>Instagram</strong>: <a href="https://www.instagram.com/faithlu_/">faithlu_</a></li>
+                <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/faith-lu/">faith-lu</a></li>
+                <li><strong>GitHub</strong>: <a href="https://www.github.com/faith-lu">faith-lu</a></li>
+            </ul>
         </footer>
     </body>
 </html>
