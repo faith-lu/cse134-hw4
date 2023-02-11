@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles/home.css" />
+        <link rel="stylesheet" href="styles/index.css" />
         <title>Home - Faith Lu</title>
         <!-- Some CSS would go below in the style tags, saved for HW3 -->
         <style>
@@ -12,7 +12,7 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
+                    <!-- <li><a href="/index.html">Home</a></li> -->
                     <li><a href="/about.html">About Me</a></li>
                     <li><a href="/resume.html">Resume</a></li>
                     <li><a href="/portfolio.html">Portfolio</a></li>
@@ -20,23 +20,27 @@
                     <li><a href="/sandbox.html">Sandbox</a></li>
                 </ul>
             </nav>
-            <h1>Hello! I'm Faith.</h1>
-            <hr />
-            <p>
-                I am currently a <span>third-year student</span> at <a href="https://www.ucsd.edu">UC San Diego</a>, majoring in <strong>computer science</strong>. I am pursuing internships for both <em>SWE</em> and <i>design</i> roles.
-            </p>
-            <br />
-            <picture>
-                <source srcset="img/zuzu.jpeg" width="300">
-                <img src="img/nala.jpeg" width="300" alt="An image of a cat.">
-            </picture>
-            <p>Picture from <a href="https://www.instagram.com/zuzu_and_nala">@zuzu_and_nala</a> on Instagram.</p>
         </header>
         <main>
-            
+            <section style="float: left;">
+                <h1>Hello! I'm <span class="glow">Faith.</span></h1>
+                <p>
+                    I am currently a <strong>third-year</strong> student at <a href="https://www.ucsd.edu"><strong>UC San Diego</strong></a> pursuing my <strong>B.S. in computer science</strong>. My interests lie in <em>full-stack development</em>, <em>computer science education</em>, and <em>accessibility</em>.
+                </p>
+            </section>
+            <section style="float: right;">
+                <div class="trail_parent">
+                    <img class="trail_decor_top" src="img/star_trail.svg" />
+                    <img class="trail_base" src="img/avatar.png" />
+                    <!-- <img class="trail_decor_under" src="img/star_trail.svg" /> -->
+                </div>
+                <!-- <picture>
+                    <source srcset="img/avatar.png" width="4.5vw">
+                    <img src="img/placeholder.png" width="300" alt="Placeholder image.">
+                </picture> -->
+            </section>
         </main>
         <footer>
-            <hr />
             <h3>Links</h3>
             <ul>
                 <li><strong>Facebook</strong>: <a href="https://www.facebook.com/l.faithh/">l.faithh</a></li>
