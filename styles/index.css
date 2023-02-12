@@ -17,33 +17,38 @@ html {
 body {
     background: linear-gradient(#161133 0%, #7483A1 100%);
     color: var(--light-text);
-    margin: 0 10%;
+    margin: 0 8%;
 }
 
 main {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: calc(14px + 0.5vw);
     font-weight: 300;
     line-height: 1.5;
-    max-width: 95%;
 }
 
 h1 {
     color: var(--light-text);
-    display:inline;
-    font-size: 5rem;
+    display: inline;
+    font-size: calc(2em + 3.5vw);
     font-weight: bold;
-    max-width: 600px;
-    width: fit-content;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+img.avatar {
+    width: 22.5vw;
+    min-width: 15em;
+    margin-left: 2em;
 }
 
 .glow {
@@ -52,41 +57,10 @@ img {
 }
 .glow:after {
     background: url("/img/h1stars.svg") no-repeat 0 0;
-    background-size: 5vw;
+    background-size: calc(0.5em + 3vw);
     content: " ";
-    display:inline-block;
-    margin-left: 1.5vw;
-    width: 5vw;
-    height: 5vw;
-}
-
-.trail_parent {
-    position: relative;
-    max-width: 75vw;
-    /* width: 350px; */
-    width: 25vw;
     display: inline-block;
-    margin-left: 3vw;
+    margin-left: 1.5vw;
+    width: calc(0.5em + 3vw);
+    height: calc(0.5em + 3vw);
 }
-
-/* .trail_base {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    z-index: 0;
-}
-
-.trail_decor_top {
-    position: relative;
-    margin: 0 auto;
-    z-index: 1;
-}
-
-.trail_decor_under {
-    position: absolute;
-    top: 0;
-    left: 0;
-    size: 75%;
-    z-index: 1;
-} */
