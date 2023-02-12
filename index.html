@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles/index.css" />
-        <link rel="stylesheet" href="styles/nav.css" />
+        <link rel="stylesheet" href="styles/header.css" />
         <link rel="stylesheet" href="styles/footer.css" />
         <title>Home - Faith Lu</title>
         <!-- Some CSS would go below in the style tags, saved for HW3 -->
@@ -13,13 +13,16 @@
     <body>
         <header class="hori_flex">
             <div id="wordmark">FAITH <strong>LU.</strong></div>
-            <nav class="hori_flex">
-                <a href="/about.html">About Me</a><span class="divider">・</span>
-                <a href="/resume.html">Resume</a><span class="divider">・</span>
-                <a href="/portfolio.html">Portfolio</a><span class="divider">・</span>
-                <a href="/contact.html">Contact</a><span class="divider">・</span>
-                <a href="/sandbox.html">Sandbox</a>
-            </nav>
+            <div class="hori_flex">
+                <nav>
+                    <span><a href="/about.html">About Me</a></span>
+                    <span><a href="/resume.html">Resume</a></span>
+                    <span><a href="/portfolio.html">Portfolio</a></span>
+                    <span><a href="/contact.html">Contact</a></span>
+                    <span><a href="/sandbox.html">Sandbox</a></span>
+                </nav>
+                <img id="mode_switch" src="/img/moon.svg"/>
+            </div>
         </header>
         <main class="hori_flex">
             <section>

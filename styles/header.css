@@ -1,0 +1,43 @@
+header {
+    padding: 2em 8%;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header.hori_flex {
+    justify-content: space-between;
+}
+
+nav {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin: 0 3em;
+}
+
+nav span {
+    vertical-align: middle;
+}
+
+nav span:not(:last-of-type):after{
+    content: "・";
+    user-select: none;
+    font-size: 1.5em;
+    z-index: -1;
+    line-height: 0;
+    display:inline-block;
+    vertical-align: middle;
+    padding-bottom: 0.15em;
+}
+
+#wordmark {
+    font-size: 1.5em;
+    user-select: none;
+}
+
+#mode_switch {
+    width: calc(12px + 2vw);
+}
