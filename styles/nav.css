@@ -19,3 +19,8 @@ nav.hori_flex {
     user-select: none;
     font-size: 2em;;
 }
+
+#wordmark {
+    margin: 0 8%;
+    font-size: 1.5em;
+}
