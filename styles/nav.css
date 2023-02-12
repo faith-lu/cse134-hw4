@@ -1,0 +1,21 @@
+nav {
+    padding: 2em 8%;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+nav.hori_flex {
+    justify-content: right;
+    flex-wrap:wrap;
+    gap: 0.5em;
+}
+
+.divider {
+    user-select: none;
+    font-size: 2em;;
+}

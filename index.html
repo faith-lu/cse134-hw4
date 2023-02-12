@@ -11,19 +11,17 @@
         </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <!-- <li><a href="/index.html">Home</a></li> -->
-                    <li><a href="/about.html">About Me</a></li>
-                    <li><a href="/resume.html">Resume</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/sandbox.html">Sandbox</a></li>
-                </ul>
+        <header class="hori_flex">
+            <div id="wordmark">FAITH <strong>LU.</strong></div>
+            <nav class="hori_flex">
+                <a href="/about.html">About Me</a><span class="divider">・</span>
+                <a href="/resume.html">Resume</a><span class="divider">・</span>
+                <a href="/portfolio.html">Portfolio</a><span class="divider">・</span>
+                <a href="/contact.html">Contact</a><span class="divider">・</span>
+                <a href="/sandbox.html">Sandbox</a>
             </nav>
         </header>
-        <main>
+        <main class="hori_flex">
             <section>
                 <h1>Hello! I'm <span class="glow">Faith.</span></h1>
                 <p>
@@ -43,14 +41,25 @@
                 </picture> -->
             </section>
         </main>
-        <footer>
-            <h3>Links</h3>
-            <ul>
-                <li><strong>Facebook</strong>: <a href="https://www.facebook.com/l.faithh/">l.faithh</a></li>
-                <li><strong>Instagram</strong>: <a href="https://www.instagram.com/faithlu_/">faithlu_</a></li>
-                <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/faith-lu/">faith-lu</a></li>
-                <li><strong>GitHub</strong>: <a href="https://www.github.com/faith-lu">faith-lu</a></li>
-            </ul>
+        <footer class="hori_flex">
+            <section>
+                <ul class="no_bullets">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/sandbox.html">Sandbox</a></li>
+                </ul>
+            </section>
+            <section id="socmed_links">
+                <ul class="no_bullets">
+                    <li class="hori_flex"><a href="mailto:falu@ucsd.edu"><img class="icon" src="/img/footer/mail_light.svg" /></a><a class="icon_link" href="mailto:falu@ucsd.edu">falu@ucsd.edu</a></li>
+                    <li class="hori_flex"><a href="https://www.linkedin.com/in/faith-lu"><img class="icon" src="/img/footer/linkedin_light.svg" /></a><a class="icon_link" href="https://www.linkedin.com/in/faith-lu">faith-lu</a></li>
+                    <li class="hori_flex"><a href="https://www.github.com/faith-lu"><img class="icon" src="/img/footer/github_light.svg" /></a><a class="icon_link" href="https://www.github.com/faith-lu">faith-lu</a></li>
+                    <li class="hori_flex"><a href="https://www.facebook.com/l.faithh"><img class="icon" src="/img/footer/facebook_light.svg" /></a><a class="icon_link" href="https://www.facebook.com/l.faithh">l.faithh</a></li>
+                </ul>
+            </section>
         </footer>
     </body>
 
