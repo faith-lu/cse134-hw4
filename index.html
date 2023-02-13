@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles/index.css" />
-        <link rel="stylesheet" href="styles/header.css" />
-        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" media="screen" href="styles/index.css" />
+        <link rel="stylesheet" media="screen" href="styles/header.css" />
+        <link rel="stylesheet" media="screen" href="styles/footer.css" />
         <title>Home - Faith Lu</title>
         <!-- Some CSS would go below in the style tags, saved for HW3 -->
         <style>
@@ -32,18 +32,21 @@
                 </p>
             </section>
             <section>
-                <!-- <div class="trail_parent">
-                    <img class="trail_decor_top" src="img/star_trail.svg" />
-                    <img class="trail_base" src="img/avatar.png" />
-                    <img class="trail_decor_under" src="img/star_trail.svg" />
-                </div> -->
-                <img class="avatar" src="img/avatar_trail.png" />
+                <picture>
+                    <source class="avatar" srcset="img/avatar_trail.png">
+                    <img class="avatar" src="img/avatar_trail.png" />
+                </picture>
                 <!-- <picture>
                     <source class="avatar" srcset="img/avatar_trail.png">
                     <img src="img/placeholder.png" width="300" alt="Placeholder image.">
                 </picture> -->
             </section>
         </main>
+        <section>
+            <h1>Schedule</h1>
+            <br />
+            <iframe src="https://calendar.google.com/calendar/embed?src=042deeec4c2a95142cfae219d9700de6c5efa9febadb352743eb1097e59c3ebc%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </section>
         <footer class="hori_flex">
             <section>
                 <ul class="no_bullets">

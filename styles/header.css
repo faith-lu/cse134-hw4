@@ -1,5 +1,5 @@
 header {
-    padding: 2em 8%;
+    padding: 2% 8%;
     display: block;
     margin: 0 auto;
     top: 0;
@@ -34,7 +34,7 @@ nav span:not(:last-of-type):after{
 }
 
 #wordmark {
-    font-size: 1.5em;
+    font-size: calc(0.5em + 1vw);
     user-select: none;
 }
 
