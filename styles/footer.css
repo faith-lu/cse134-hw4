@@ -24,9 +24,16 @@ footer.flexbox, footer.flexbox * {
 }
 
 /* Resize for mobile devices -- footer only needs to alter the direction of the elements */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 640px) {
+    footer {
+        font-size: 5vw;
+    }
     footer.flexbox {
         flex-direction: column;
+        align-items: flex-start;
         gap: 1em;
+    }
+    #socmed_links {
+        margin: 0;
     }
 }

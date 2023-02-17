@@ -131,7 +131,7 @@ li {
     justify-content: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 640px) {
     main {
         text-align: center;
     }
@@ -146,6 +146,9 @@ li {
         margin: 1em auto;
     }
     h1 {
-        font-size: calc(1em + 3.5vw);;
+        font-size: calc(1.5em + 3.5vw);
+    }
+    p {
+        margin: 2em 0;
     }
 }
