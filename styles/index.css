@@ -1,3 +1,7 @@
+html {
+    background-color: var(--main1);
+}
+
 body {
     background: linear-gradient(#161133 0%, #7483A1 100%);
 }

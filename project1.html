@@ -2,41 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <title>Home - Faith Lu</title>
-        <script>
-            window.addEventListener('load', function() {
-                let canvas = document.getElementById('project_canvas');
-                let context = canvas.getContext('2d');
-                
-                context.strokeStyle = 'red';
-                context.strokeRect(50,50,100,50);
-                context.font = "24px Times New Roman";
-                context.fillText("Project 1", 60, 85);
-            });
-        </script>
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <title>Project 1 - Faith Lu</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About Me</a></li>
-                    <li><a href="/resume.html">Resume</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/sandbox.html">Sandbox</a></li>
-                </ul>
-            </nav>
-            <h1>Project 1</h1>
-            <hr />
+        <header class="flexbox">
+            <div id="wordmark">
+                FAITH <strong>LU.</strong>
+            </div>
+            <div class="flexbox">
+                <nav class="flexbox">
+                    <ul class="no_bullets">
+                        <li><a href="/index.html">About Me</a></li>
+                        <li><a href="/resume.html">Resume</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/sandbox.html">Sandbox</a></li>
+                    </ul>
+                </nav>
+                <div id="mode_switch">
+                    <img src="/img/moon.svg" />
+                </div>
+                <div id="hamburger_menu">
+                    <img src="/img/menu.svg" />
+                </div>
+            </div>
         </header>
         <main>
-            <canvas id="project_canvas" width="300" height="300">
-                <em>Canvas Supporting Browser Required</em>
-            </canvas>
-            <p>Canvas usage example.</p>
-            <h2>Writeup</h2>
+            <a href="/portfolio.html"><button>&larr; Return to Portfolio</button></a>
+            <h2>Project 1 Writeup</h2>
             <details>
                 <summary>
                     Contributors
@@ -47,16 +44,50 @@
                     Lorem ipsum
                 </p>
             </details>
-        </main>
-        <footer>
+            <br />
             <hr />
-            <h3>Links</h3>
-            <ul>
-                <li><strong>Facebook</strong>: <a href="https://www.facebook.com/l.faithh/">l.faithh</a></li>
-                <li><strong>Instagram</strong>: <a href="https://www.instagram.com/faithlu_/">faithlu_</a></li>
-                <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/faith-lu/">faith-lu</a></li>
-                <li><strong>GitHub</strong>: <a href="https://www.github.com/faith-lu">faith-lu</a></li>
-            </ul>
+            <br />
+            <section class="writeup">
+                <div class="writeup_flexbox">
+                    <h3 class="flex_header">Roadmap</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="writeup_flexbox">
+                    <h3 class="flex_header">Process</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="writeup_flexbox">
+                    <h3 class="flex_header">Conclusion</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+        <footer class="flexbox">
+            <section>
+                <ul class="no_bullets">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/sandbox.html">Sandbox</a></li>
+                </ul>
+            </section>
+            <section id="socmed_links">
+                <ul class="no_bullets">
+                    <li class="flexbox"><a href="mailto:falu@ucsd.edu"><img class="icon" src="/img/footer/mail_light.svg" /></a><a class="icon_link" href="mailto:falu@ucsd.edu">falu@ucsd.edu</a></li>
+                    <li class="flexbox"><a href="https://www.linkedin.com/in/faith-lu"><img class="icon" src="/img/footer/linkedin_light.svg" /></a><a class="icon_link" href="https://www.linkedin.com/in/faith-lu">faith-lu</a></li>
+                    <li class="flexbox"><a href="https://www.github.com/faith-lu"><img class="icon" src="/img/footer/github_light.svg" /></a><a class="icon_link" href="https://www.github.com/faith-lu">faith-lu</a></li>
+                    <li class="flexbox"><a href="https://www.facebook.com/l.faithh"><img class="icon" src="/img/footer/facebook_light.svg" /></a><a class="icon_link" href="https://www.facebook.com/l.faithh">l.faithh</a></li>
+                </ul>
+            </section>
         </footer>
     </body>
 </html>

@@ -1,24 +1,23 @@
+html {
+    background-color: var(--main1);
+}
+
 p {
     margin: 0;
     margin-bottom: 1em;
 }
 
-.resume_desc p {
+.writeup p {
     font-size: 1em;
 }
 
-.resume_desc p:hover {
-    color: #B8D5F0;
-    transition: all 0.25s;
-}
-
-.resume_flexbox {
+.writeup_flexbox {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 5em;
     justify-content: left;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .flex_header {
@@ -27,15 +26,4 @@ p {
     text-align: right;
     font-size: 1em;
     text-transform: uppercase;
-}
-
-.resume_item_header {
-    text-transform: uppercase;
-    font-weight: 700;
-
-}
-
-.resume_item_header:after {
-    content: "\a";
-    white-space: pre;
 }

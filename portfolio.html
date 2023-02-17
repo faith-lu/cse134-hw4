@@ -2,129 +2,164 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <title>Home - Faith Lu</title>
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" href="styles/portfolio.css" />
+        <title>Portfolio - Faith Lu</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
+        <header class="flexbox">
+            <div id="wordmark">
+                FAITH <strong>LU.</strong>
+            </div>
+            <div class="flexbox">
+                <nav class="flexbox">
+                    <ul class="no_bullets">
+                        <li><a href="/index.html">About Me</a></li>
+                        <li><a href="/resume.html">Resume</a></li>
+                        <li><a href="#" class="curr_nav">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/sandbox.html">Sandbox</a></li>
+                    </ul>
+                </nav>
+                <div id="mode_switch">
+                    <img src="/img/moon.svg" />
+                </div>
+                <div id="hamburger_menu">
+                    <img src="/img/menu.svg" />
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="proj_desc">
+                <h2>Programming</h2>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+            </section>
+            <section class="proj_desc">
+                <h2>UI/UX Design</h2>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+            </section>
+            <section class="proj_desc">
+                <h2>Graphic Design</h2>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+                <div class="proj_entry">
+                    <div class="proj_flexbox">
+                        <h3 class="flex_header">Project 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <a href="/project1.html">
+                        <button>Read More</button>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="flexbox">
+            <section>
+                <ul class="no_bullets">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">About Me</a></li>
                     <li><a href="/resume.html">Resume</a></li>
-                    <li>
-                        <a href="/portfolio.html">Portfolio</a>
-                        <ol>
-                            <li>
-                                <a href="#Coding">Coding</a>
-                                <ol>
-                                    <li><a href="/project1.html">Go to Project 1</a></li>
-                                </ol>
-                            </li>
-                            <li><a href="#UI/UX_Design">UI/UX Design</a></li>
-                            <li><a href="#Graphic_Design">Graphic Design</a></li>
-                        </ol>
-                    </li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                     <li><a href="/sandbox.html">Sandbox</a></li>
                 </ul>
-            </nav>
-            <h1>My Portfolio</h1>
-            <hr />
-        </header>
-        <main>
-            <section>
-                <h2 id="Coding">Coding</h2>
-                <table>
-                    <caption>Recent SWE-Related Projects</caption>
-                    <colgroup>
-                        <col>
-                        <col span="2">
-                    </colgroup>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                        <th>Read More</th>
-                    </tr>
-                    <tr>
-                        <td>Project 1</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td><a href="/project1.html">View Project 1</a></td>
-                    </tr>
-                    <tr>
-                        <td>Project 2</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Project 3</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                </table>
             </section>
-            <section>
-                <h2 id="UI/UX_Design">UI/UX Design</h2>
-                <table>
-                    <caption>Recent UI/UX Design-Related Projects</caption>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                        <th>Read More</th>
-                    </tr>
-                    <tr>
-                        <td>Project 1</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Project 2</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Project 3</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                </table>
+            <section id="socmed_links">
+                <ul class="no_bullets">
+                    <li class="flexbox"><a href="mailto:falu@ucsd.edu"><img class="icon" src="/img/footer/mail_light.svg" /></a><a class="icon_link" href="mailto:falu@ucsd.edu">falu@ucsd.edu</a></li>
+                    <li class="flexbox"><a href="https://www.linkedin.com/in/faith-lu"><img class="icon" src="/img/footer/linkedin_light.svg" /></a><a class="icon_link" href="https://www.linkedin.com/in/faith-lu">faith-lu</a></li>
+                    <li class="flexbox"><a href="https://www.github.com/faith-lu"><img class="icon" src="/img/footer/github_light.svg" /></a><a class="icon_link" href="https://www.github.com/faith-lu">faith-lu</a></li>
+                    <li class="flexbox"><a href="https://www.facebook.com/l.faithh"><img class="icon" src="/img/footer/facebook_light.svg" /></a><a class="icon_link" href="https://www.facebook.com/l.faithh">l.faithh</a></li>
+                </ul>
             </section>
-            <section>
-                <h2 id="Graphic_Design">Graphic Design</h2>
-                <table>
-                    <caption>Recent Graphic Design-Related Projects</caption>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                        <th>Read More</th>
-                    </tr>
-                    <tr>
-                        <td>Project 1</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Project 2</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Project 3</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        <td>Work in Progress</td>
-                    </tr>
-                </table>
-            </section>
-        </main>
-        <footer>
-            <hr />
-            <h3>Links</h3>
-            <ul>
-                <li><strong>Facebook</strong>: <a href="https://www.facebook.com/l.faithh/">l.faithh</a></li>
-                <li><strong>Instagram</strong>: <a href="https://www.instagram.com/faithlu_/">faithlu_</a></li>
-                <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/faith-lu/">faith-lu</a></li>
-                <li><strong>GitHub</strong>: <a href="https://www.github.com/faith-lu">faith-lu</a></li>
-            </ul>
         </footer>
     </body>
 

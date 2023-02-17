@@ -2,10 +2,11 @@
 
 /* main elements, consistent throughout */
 :root {
-    --dark-mode-text: #ffffff;
-    --light-mode-text: #3a3a3a;
-    --dark-mode75-text: #ffffff75;
-    --light-mode75-text: #3a3a3a75;
+    --white: #ffffff;
+    --white75: #ffffff75;
+    --gray: #3a3a3a;
+    --gray75: #3a3a3a75;
+    --main1: #161133; 
 }
 
 * {
@@ -13,11 +14,11 @@
 }
 html {
     min-height: 100%;
-    background: #161133;
+    background-color: #333745;
 }
 
 body {
-    color: var(--dark-mode-text);
+    color: var(--white);
     margin: 0;
 }
 
@@ -33,7 +34,7 @@ img {
 
 /* General link styling */
 a, a:link, a:visited, a:hover, a:active {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -46,17 +47,17 @@ a:hover {
 
 /* Button styling */
 button {
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 5em;
     padding: 1em 1.5em;
     margin-right: 1em;
 
-    color: #161133;
+    color: var(--main1);
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 700;
     border: 0;
-    box-shadow: 0.5em 0.5em #161133;
+    box-shadow: 0.5em 0.5em var(--main1);
     transition: all 0.5s;
 }
 
@@ -68,7 +69,7 @@ button:hover {
 }
 
 button:active {
-    box-shadow: 0 0 1em #ffffff;
+    box-shadow: 0 0 1em var(--white);
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -81,10 +82,18 @@ p {
 }
 
 h1 {
-    color: var(--light-text);
+    color: var(--white);
     display: inline;
     font-size: calc(2em + 3.5vw);
     font-weight: bold;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    margin: 0;
 }
 
 /* List styling */
@@ -99,7 +108,7 @@ li {
 }
 
 /* Aesthetics */
-h1:after {
+h1:after, h2:after {
     background: url("/img/stars.svg") no-repeat 0 0;
     background-size: 1em;
     content: "";
@@ -110,8 +119,13 @@ h1:after {
 }
 
 .h1_glow {
-    text-shadow: 0px 0px 30px var(--dark-mode75-text);
+    text-shadow: 0px 0px 30px var(--white75);
     white-space: nowrap;
+}
+
+.curr_nav {
+    font-style: italic;
+    pointer-events: none;
 }
 
 /* Flexbox */
@@ -120,4 +134,19 @@ h1:after {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+/* Other html tags */
+summary {
+    text-transform: uppercase;
+    font-weight: 700;  
+    font-size: 1.25em;
+}
+details p {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 2em;
+    margin-top: 1em;
+    line-height: 2;
 }
