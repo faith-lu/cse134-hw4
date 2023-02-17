@@ -24,7 +24,7 @@ footer.flexbox, footer.flexbox * {
 }
 
 /* Resize for mobile devices -- footer only needs to alter the direction of the elements */
-@media screen and (max-width: 640px) or (pointer: none) or (pointer: coarse) {
+@media screen and (max-width: 640px), (pointer: none), (pointer: coarse) {
     footer {
         font-size: 5vw;
     }

@@ -64,7 +64,7 @@ nav ul {
     display: none;
 }
 
-@media screen and (max-width: 640px) or (pointer: none) or (pointer: coarse) {
+@media screen and (max-width: 640px), (pointer: none), (pointer: coarse) {
     nav, #mode_switch {
         visibility: hidden;
     }
