@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" media="screen" href="styles/index.css" />
         <link rel="stylesheet" media="screen" href="styles/header.css" />
+        <!-- <link rel="stylesheet" media="screen and (max-width: 640px)" href="styles/header_mobile.css" /> -->
         <link rel="stylesheet" media="screen" href="styles/footer.css" />
         <title>Home - Faith Lu</title>
         <!-- Some CSS would go below in the style tags, saved for HW3 -->
@@ -11,43 +12,81 @@
         </style>
     </head>
     <body>
-        <header class="hori_flex">
-            <div id="wordmark">FAITH <strong>LU.</strong></div>
-            <div class="hori_flex">
-                <nav>
-                    <span><a href="/about.html">About Me</a></span>
-                    <span><a href="/resume.html">Resume</a></span>
-                    <span><a href="/portfolio.html">Portfolio</a></span>
-                    <span><a href="/contact.html">Contact</a></span>
-                    <span><a href="/sandbox.html">Sandbox</a></span>
+        <header class="flexbox">
+            <!-- wordmark -->
+            <div id="wordmark"> <!-- no use in other elements, so id would make more sense -->
+                FAITH <strong>LU.</strong>
+            </div>
+            <!-- navigation -->
+            <div class="flexbox"> <!-- force specific spacing between list and mode switch -->
+                <nav class="flexbox">
+                    <ul class="no_bullets"> <!-- list in nav would be helpful for organizing dropdowns -->
+                        <li><a href="/about.html">About Me</a></li>
+                        <li><a href="/resume.html">Resume</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/sandbox.html">Sandbox</a></li>
+                    </ul>
                 </nav>
-                <img id="mode_switch" src="/img/moon.svg"/>
+                <!-- mode switch -->
+                <div id="mode_switch"> <!-- from moon.svg -->
+                    <img src="/img/moon.svg" />
+                </div>
+                <div id="hamburger_menu">
+                    <img src="/img/menu.svg" />
+                </div>
             </div>
         </header>
-        <main class="hori_flex">
-            <section>
-                <h1>Hello! I'm <span class="glow">Faith.</span></h1>
-                <p>
-                    I am currently a <strong>third-year</strong> student at <a href="https://www.ucsd.edu"><strong>UC San Diego</strong></a> pursuing my <strong>B.S. in computer science</strong>. My interests lie in <em>full-stack development</em>, <em>computer science education</em>, and <em>accessibility</em>.
-                </p>
+
+        <!-- header, introduction, avatar -->
+        <!-- NOTES:
+            - to add: quick nav (about, portfolio), latest projects, calendar
+        -->
+        <main>
+            <!-- section 1: introduction -->
+            <section class="flexbox">
+                <div>
+                <!-- header -->
+                    <h1>
+                        Hello! I'm <span class="h1_glow">Faith.</span>
+                    </h1>
+
+                    <!-- introduction -->
+                    <p>
+                        I am currently a <strong>third-year</strong> student at <a href="https://www.ucsd.edu"><strong>UC San Diego</strong></a> pursuing my <strong>B.S. in computer science</strong>. My interests lie in <em>full-stack development</em>, <em>computer science education</em>, and <em>accessibility</em>.
+                    </p>
+                </div>
+                <div>
+                    <!-- avatar -->
+                    <picture style="width: 100%">
+                        <source class="main_avatar" srcset="img/avatar_trail.png">
+                        <img class="main_avatar" src="img/avatar_trail.png" /> <!-- fallback option -->
+                    </picture>
+                </div>
             </section>
+            
+            <!-- section 2: quick nav -->
             <section>
-                <picture>
-                    <source class="avatar" srcset="img/avatar_trail.png">
-                    <img class="avatar" src="img/avatar_trail.png" />
-                </picture>
-                <!-- <picture>
-                    <source class="avatar" srcset="img/avatar_trail.png">
-                    <img src="img/placeholder.png" width="300" alt="Placeholder image.">
-                </picture> -->
+                <a href="https://www.linkedin.com/in/faith-lu/"><button>Connect with Me!</button></a> <!-- connect -->
+                <a href="/resume.html"><button>My Resume</button></a> <!-- resume -->
+            </section>
+
+            <!-- section 3: latest -->
+            <section>
+                <!-- latest projects -->
+                <h2>
+                    Latest Projects
+                </h2>
+                <div>
+                    <div></div> <!-- project placeholder 1 -->
+                    <div></div> <!-- project placeholder 2 -->
+                    <div></div> <!-- project placeholder 3 -->
+                </div>
             </section>
         </main>
-        <section>
-            <h1>Schedule</h1>
-            <br />
-            <iframe src="https://calendar.google.com/calendar/embed?src=042deeec4c2a95142cfae219d9700de6c5efa9febadb352743eb1097e59c3ebc%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </section>
-        <footer class="hori_flex">
+
+        <!-- quick nav, social media -->
+        <footer class="flexbox">
             <section>
                 <ul class="no_bullets">
                     <li><a href="/index.html">Home</a></li>
@@ -60,10 +99,10 @@
             </section>
             <section id="socmed_links">
                 <ul class="no_bullets">
-                    <li class="hori_flex"><a href="mailto:falu@ucsd.edu"><img class="icon" src="/img/footer/mail_light.svg" /></a><a class="icon_link" href="mailto:falu@ucsd.edu">falu@ucsd.edu</a></li>
-                    <li class="hori_flex"><a href="https://www.linkedin.com/in/faith-lu"><img class="icon" src="/img/footer/linkedin_light.svg" /></a><a class="icon_link" href="https://www.linkedin.com/in/faith-lu">faith-lu</a></li>
-                    <li class="hori_flex"><a href="https://www.github.com/faith-lu"><img class="icon" src="/img/footer/github_light.svg" /></a><a class="icon_link" href="https://www.github.com/faith-lu">faith-lu</a></li>
-                    <li class="hori_flex"><a href="https://www.facebook.com/l.faithh"><img class="icon" src="/img/footer/facebook_light.svg" /></a><a class="icon_link" href="https://www.facebook.com/l.faithh">l.faithh</a></li>
+                    <li class="flexbox"><a href="mailto:falu@ucsd.edu"><img class="icon" src="/img/footer/mail_light.svg" /></a><a class="icon_link" href="mailto:falu@ucsd.edu">falu@ucsd.edu</a></li>
+                    <li class="flexbox"><a href="https://www.linkedin.com/in/faith-lu"><img class="icon" src="/img/footer/linkedin_light.svg" /></a><a class="icon_link" href="https://www.linkedin.com/in/faith-lu">faith-lu</a></li>
+                    <li class="flexbox"><a href="https://www.github.com/faith-lu"><img class="icon" src="/img/footer/github_light.svg" /></a><a class="icon_link" href="https://www.github.com/faith-lu">faith-lu</a></li>
+                    <li class="flexbox"><a href="https://www.facebook.com/l.faithh"><img class="icon" src="/img/footer/facebook_light.svg" /></a><a class="icon_link" href="https://www.facebook.com/l.faithh">l.faithh</a></li>
                 </ul>
             </section>
         </footer>

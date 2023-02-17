@@ -9,7 +9,7 @@ footer {
     left: 0;
 }
 
-footer.hori_flex, footer.hori_flex * {
+footer.flexbox, footer.flexbox * {
     justify-content: left;
 }
 
@@ -21,4 +21,12 @@ footer.hori_flex, footer.hori_flex * {
 
 #socmed_links {
     margin-left: 5em;
+}
+
+/* Resize for mobile devices -- footer only needs to alter the direction of the elements */
+@media screen and (max-width: 480px) { 
+    footer.flexbox {
+        flex-direction: column;
+        gap: 1em;
+    }
 }

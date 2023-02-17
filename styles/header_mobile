@@ -19,10 +19,7 @@ header.flexbox {
 
 /* Navbar */
 nav {
-    font-weight: 700;
-    font-size: calc(0.5em + 1vw);
-    margin-left: 2em;
-    text-transform: uppercase;
+    visibility: hidden;
 }
 
 /* Make list items horizontal */
@@ -58,17 +55,4 @@ nav ul {
 #mode_switch {
     margin: calc(1em + 1vw);
     width: calc(1em + 1vw);
-}
-
-#hamburger_menu {
-    display: none;
-}
-
-@media screen and (max-width: 640px) {
-    nav, #mode_switch {
-        visibility: hidden;
-    }
-    #hamburger_menu {
-        display: inline;
-    }
 }
