@@ -131,7 +131,7 @@ li {
     justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) or (pointer: none) {
     main {
         text-align: center;
     }
