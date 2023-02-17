@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" media="screen" href="styles/temp.css" />
+        <link rel="stylesheet" media="screen" href="styles/header_temp.css" />
+        <link rel="stylesheet" media="screen" href="styles/footer_temp.css" />
+        <!-- <link rel="stylesheet" media="screen" href="styles/index.css" />
+        <link rel="stylesheet" media="screen" href="styles/header.css" />
+        <link rel="stylesheet" media="screen" href="styles/footer.css" /> -->
+        <title>Home - Faith Lu</title>
+    </head>
+    <body>
+        <!-- wordmark, navigation, mode switch -->
+        <header class="horizontal_flex">
+            <!-- wordmark -->
+            <div id="wordmark"> <!-- no use in other elements, so id would make more sense -->
+                FAITH <strong>LU.</strong>
+            </div>
+            <!-- navigation -->
+            <div class="horizontal_flex"> <!-- force specific spacing between list and mode switch -->
+                <nav class="horizontal_flex">
+                    <ul class="no_bullets"> <!-- list in nav would be helpful for organizing dropdowns -->
+                        <li><a href="/about.html">About Me</a></li>
+                        <li><a href="/resume.html">Resume</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/sandbox.html">Sandbox</a></li>
+                    </ul>
+                </nav>
+                <!-- mode switch -->
+                <div id="mode_switch"> <!-- from moon.svg -->
+                    <img src="/img/moon.svg" />
+                </div>
+            </div>
+        </header>
+
+        <!-- header, introduction, avatar -->
+        <!-- NOTES:
+            - to add: quick nav (about, portfolio), latest projects, calendar
+        -->
+        <main>
+            <!-- section 1: introduction -->
+            <section class="horizontal_flex">
+                <div>
+                <!-- header -->
+                    <h1>
+                        Hello! I'm <span class="h1_glow">Faith.</span>
+                    </h1>
+
+                    <!-- introduction -->
+                    <p>
+                        I am currently a <strong>third-year</strong> student at <a href="https://www.ucsd.edu"><strong>UC San Diego</strong></a> pursuing my <strong>B.S. in computer science</strong>. My interests lie in <em>full-stack development</em>, <em>computer science education</em>, and <em>accessibility</em>.
+                    </p>
+                </div>
+                <div>
+                    <!-- avatar -->
+                    <picture style="width: 100%">
+                        <source class="main_avatar" srcset="img/avatar_trail.png">
+                        <img class="main_avatar" src="img/avatar_trail.png" /> <!-- fallback option -->
+                    </picture>
+                </div>
+            </section>
+            
+            <!-- section 2: quick nav -->
+            <section>
+                <a href="https://www.linkedin.com/in/faith-lu/"><button>Connect with Me!</button></a> <!-- connect -->
+                <a href="/resume.html"><button>My Resume</button></a> <!-- resume -->
+            </section>
+
+            <!-- section 3: latest -->
+            <section>
+                <!-- latest projects -->
+                <h2>
+                    Latest Projects
+                </h2>
+                <div>
+                    <div></div> <!-- project placeholder 1 -->
+                    <div></div> <!-- project placeholder 2 -->
+                    <div></div> <!-- project placeholder 3 -->
+                </div>
+            </section>
+            
+            <!-- section 4: calendar -->
+            <section>
+                <h2>
+                    Calendar
+                </h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=042deeec4c2a95142cfae219d9700de6c5efa9febadb352743eb1097e59c3ebc%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
+        </main>
+
+        <!-- quick nav, social media -->
+        <footer class="footer_flex">
+            <!-- section 1: quick nav -->
+            <section>
+                <ul class="no_bullets">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/sandbox.html">Sandbox</a></li>
+                </ul>
+            </section>
+
+            <!-- section 2: social media -->
+            <section id="social_links">
+                <ul class="no_bullets">
+                    <li class="social_flex"><a href="mailto:falu@ucsd.edu"><img class="icon" src="/img/footer/mail_light.svg" /></a><a class="icon_link" href="mailto:falu@ucsd.edu">falu@ucsd.edu</a></li>
+                    <li class="social_flex"><a href="https://www.linkedin.com/in/faith-lu"><img class="icon" src="/img/footer/linkedin_light.svg" /></a><a class="icon_link" href="https://www.linkedin.com/in/faith-lu">faith-lu</a></li>
+                    <li class="social_flex"><a href="https://www.github.com/faith-lu"><img class="icon" src="/img/footer/github_light.svg" /></a><a class="icon_link" href="https://www.github.com/faith-lu">faith-lu</a></li>
+                    <li class="social_flex"><a href="https://www.facebook.com/l.faithh"><img class="icon" src="/img/footer/facebook_light.svg" /></a><a class="icon_link" href="https://www.facebook.com/l.faithh">l.faithh</a></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
