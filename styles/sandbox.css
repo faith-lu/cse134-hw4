@@ -1,0 +1,14 @@
+.wisp_footer {
+    animation: slidein 3s;
+    width: 100%;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(100%);
+    }
+  
+    to {
+        transform: translateX(90%);
+    }
+  }

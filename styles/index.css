@@ -26,6 +26,7 @@ body {
     main img {
         display: block;
         margin: 1em auto;
+        max-width: 50em;
     }
     h1 {
         font-size: calc(1.5em + 3.5vw);
