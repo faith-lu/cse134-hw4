@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,700&display=swap');
+
+/* main elements, consistent throughout */
+:root {
+    --dark-mode-text: #ffffff;
+    --light-mode-text: #3a3a3a;
+    --dark-mode75-text: #ffffff75;
+    --light-mode75-text: #3a3a3a75;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+html {
+    min-height: 100%;
+    background: #161133;
+}
+
+body {
+    color: var(--dark-mode-text);
+    margin: 0;
+}
+
+main {
+    margin: 2% 8%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* General link styling */
+a, a:link, a:visited, a:hover, a:active {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+/* Button styling */
+button {
+    background-color: #ffffff;
+    border-radius: 5em;
+    padding: 1em 1.5em;
+    margin-right: 1em;
+
+    color: #161133;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    box-shadow: 0.5em 0.5em #161133;
+    transition: all 0.5s;
+}
+
+button:hover {
+    box-shadow: none;
+    cursor: pointer;
+    transform: translate(0.25em, 0.25em);
+    transition: all 0.5s;
+}
+
+button:active {
+    box-shadow: 0 0 1em #ffffff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* Text styling */
+p {
+    font-size: calc(14px + 0.5vw);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--light-text);
+    display: inline;
+    font-size: calc(2em + 3.5vw);
+    font-weight: bold;
+}
+
+/* List styling */
+li {
+    line-height: 2;
+}
+
+.no_bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Aesthetics */
+h1:after {
+    background: url("/img/stars.svg") no-repeat 0 0;
+    background-size: 1em;
+    content: "";
+    display: inline-block;
+    margin-left: 0.25em;
+    width: 1em;
+    height: 1em;
+}
+
+.h1_glow {
+    text-shadow: 0px 0px 30px var(--dark-mode75-text);
+    white-space: nowrap;
+}
+
+/* Flexbox */
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
