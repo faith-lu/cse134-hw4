@@ -27,3 +27,9 @@ p {
     font-size: 1em;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 640px), (pointer: none), (pointer: coarse) {
+    .writeup_flexbox {
+        flex-direction: column;
+    }
+}

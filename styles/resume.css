@@ -29,6 +29,10 @@ p {
     text-transform: uppercase;
 }
 
+/* .flex_header + p {
+    margin-left: 10em;
+} */
+
 .resume_item_header {
     text-transform: uppercase;
     font-weight: 700;
@@ -38,4 +42,10 @@ p {
 .resume_item_header:after {
     content: "\a";
     white-space: pre;
+}
+
+@media screen and (max-width: 640px), (pointer: none), (pointer: coarse) {
+    .resume_flexbox {
+        flex-direction: column;
+    }
 }
