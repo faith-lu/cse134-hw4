@@ -1,0 +1,1 @@
+Changes: I incorporated the styled CRUD blog (https://lively-hotteok-e40441.netlify.app/blog.html). I wanted to include the hamburger menu, but I wasn't able to implement it in time.

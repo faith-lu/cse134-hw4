@@ -4,11 +4,34 @@
         <meta charset="UTF-8" />
         <script src="node_modules/dompurify/dist/purify.js"></script>
         <script type="module" src="src/styledblog.js"></script>
+        <link rel="stylesheet" media="screen" href="styles/global.css" />
         <link rel="stylesheet" href="styles/font-awesome.min.css">
         <link rel="stylesheet" href="styles/styledcrud.css" />
-        
     </head>
     <body>
+        <header class="flexbox">
+            <div id="wordmark">
+                FAITH <strong>LU.</strong>
+            </div>
+            <div class="flexbox">
+                <nav class="flexbox">
+                    <ul class="no_bullets">
+                        <li><a href="#" class="curr_nav">About Me</a></li>
+                        <li><a href="/resume.html">Resume</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/sandbox.html">Sandbox</a></li>
+                    </ul>
+                </nav>
+                <div id="mode_switch">
+                    <img src="/img/moon.svg" alt="Mode switch button, currently on dark mode"/>
+                </div>
+                <div id="hamburger_menu">
+                    <img src="/img/menu.svg" alt="Hamburger menu button, currently closed" />
+                </div>
+            </div>
+        </header>
         <main>
             <h2>Part 4 — Styled CRUD Blog</h2>
             <hr />
