@@ -132,7 +132,7 @@ function listEntries() {
         itemTitle = items[i].title;
         itemDate = items[i].date;
         itemSum = items[i].sum;
-        list += "<p class='entry'><div>Post title: <span id='title'>" + itemTitle + "</span></div><div id='date'>Post date: <span id='title'>" + itemDate + "</span></div><div id='sum'>Post sum: <span id='title'>" + itemSum + "</span></div><button id='edit' onclick='editItem(" + i + ")'>Edit</button><button id='del' onclick='deleteItem(" + i + ")'>Delete</button></p><hr />"
+        list += "<p class='entry'><div class='blogLabel'>Post title: <span id='title'>" + itemTitle + "</span></div><div class='blogLabel'>Post date: <span id='title'>" + itemDate + "</span></div><div class='blogLabel'>Post sum: <span id='title'>" + itemSum + "</span></div><img src='img/fontawesome_edit.svg' width='30' height='30' onclick='editItem(" + i + ")'/><img src='img/fontawesome_del.svg' width='30' height='30' onclick='deleteItem(" + i + ")'/></p><hr />"
     }
     document.querySelector("#entryList").innerHTML = list;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="node_modules/dompurify/dist/purify.js"></script>
+        <script type="module" src="src/styledblog.js"></script>
+        <link rel="stylesheet" href="styles/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/styledcrud.css" />
+        
+    </head>
+    <body>
+        <main>
+            <h2>Part 3 — CRUD Blog</h2>
+            <hr />
+            <br />
+            <button id="add">Add</button>
+            <div id="entryList"></div>
+            <dialog id="postDialog">
+                <label for="titleInput">Post Title:</label>
+                <input type="text" id="titleInput" name="titleInput" />
+                <br />
+                <label for="dateInput">Post Date:</label>
+                <input type="date" id="dateInput" name="dateInput" />
+                <br />
+                <label for="sumInput">Post Summary:</label>
+                <input type="textarea" id="sumInput" name="sumInput" />
+                <div>
+                    <button id="dialogCancel">Cancel</button>
+                    <button type="submit" id="dialogOK">OK</button>
+                </div>
+            </dialog>
+        </main>
+    </body>
+</html>
