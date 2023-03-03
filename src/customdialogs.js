@@ -11,11 +11,11 @@ function loadHandler() {
     // const confirmContainer = document.querySelector('confirmContainer');
     // const promptContainer = document.querySelector('promptContainer');
 
-    let alertTemplate = document.getElementById('alertDialog');
-    let confirmTemplate = document.getElementById('confirmDialog');
-    confirmTemplate.returnValue = false;
+    let alertDialog = document.getElementById('alertDialog');
+    let confirmDialog = document.getElementById('confirmDialog');
+    confirmDialog.returnValue = false;
 
-    let promptTemplate = document.getElementById('promptDialog');
+    let promptDialog = document.getElementById('promptDialog');
 
     const confirmOKButton = document.getElementById('confirmOK'); // true
     const confirmCancelButton = document.getElementById('confirmCancel'); // false
@@ -23,44 +23,37 @@ function loadHandler() {
     const promptOKButton = document.getElementById('promptOK');
     const promptUserName = document.getElementById('promptUserName');
 
-    // const alertClone = alertTemplate.content.cloneNode(true);
-    // const confirmClone = confirmTemplate.content.cloneNode(true);
-    // const promptClone = promptTemplate.content.cloneNode(true);
-    // 
-    // confirmContainer.appendChild(confirmClone);
-    // promptContainer.appendChild(promptClone);
-    
     alertButton.addEventListener('click', () => {
-        alertTemplate.showModal();
+        alertDialog.showModal();
         // alertContainer.appendChild(alertClone);
     });
     confirmButton.addEventListener('click', () => {
-        confirmTemplate.showModal();
+        confirmDialog.showModal();
     });
     confirmOKButton.addEventListener('click', () => {
-        confirmTemplate.returnValue = true;
+        confirmDialog.returnValue = true;
     })
     confirmCancelButton.addEventListener('click', () => {
-        confirmTemplate.returnValue = false;
+        confirmDialog.returnValue = false;
     })
-    confirmTemplate.addEventListener('close', () => {
-        outputElement.innerHTML = `Confirm result: ${confirmTemplate.returnValue}`;
+    confirmDialog.addEventListener('close', () => {
+        outputElement.innerHTML = `Confirm result: ${confirmDialog.returnValue}`;
     })
 
     // "Prompt" button: opens dialog; showModal()
     promptButton.addEventListener('click', () => {
-        promptTemplate.showModal();
+        promptDialog.showModal();
     });
     // Text input field: assign prompt's "OK" button's value to user input
     promptUserName.addEventListener('change', () => {
         promptOKButton.value = DOMPurify.sanitize(promptUserName.value);
     });
     // Prompt dialog: set output to the dialog's return value, which is 
-    promptTemplate.addEventListener('close', () => {
-        outputElement.innerHTML = `Prompt result: ${promptTemplate.returnValue}`;
+    promptDialog.addEventListener('close', () => {
+        outputElement.innerHTML = `Prompt result: ${promptDialog.returnValue}`;
     })
 
-    alertTemplate.addEventListener('close', () => {
+    alertDialog.addEventListener('close', () => {
         outputElement.innerHTML = "Test";
     })
 

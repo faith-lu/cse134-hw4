@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="node_modules/dompurify/dist/purify.js"></script>
+        <script type="module" src="src/blog.js"></script>
+    </head>
+    <body>
+        <h1>Part 3 — CRUD Blog</h1>
+        <button id="add">Add</button>
+        <div id="entryList"></div>
+        <dialog id="postDialog">
+            <label for="titleInput">Post Title:</label>
+            <input type="text" id="titleInput" name="titleInput" />
+            <br />
+            <label for="dateInput">Post Date:</label>
+            <input type="date" id="dateInput" name="dateInput" />
+            <br />
+            <label for="sumInput">Post Summary:</label>
+            <input type="textarea" id="sumInput" name="sumInput" />
+            <div>
+                <button id="dialogCancel">Cancel</button>
+                <button type="submit" id="dialogOK">OK</button>
+            </div>
+        </dialog>
+        <output id="outputElement"></output>
+        <template id="blogTemplate">
+            <div class="entry">
+                <div id="title"></div>
+                <div id="date"></div>
+                <div id="sum"></div>
+                <!-- <div id="userInput"></div> -->
+                <button id="edit">Edit</button>
+                <button id="del">Delete</button>
+                <hr />
+            </div>
+        </template>
+    </body>
+</html>
