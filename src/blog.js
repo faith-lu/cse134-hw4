@@ -11,22 +11,12 @@ let postDialog = document.getElementById('postDialog'); // get the post dialog
     const dialogCancel = document.getElementById('dialogCancel');
     const dialogOK = document.getElementById('dialogOK');
 
-// const template = document.getElementById('blogTemplate');
-//     const clone = template.content.cloneNode(true); // create a clone of the entry div
-
-// let userInput = clone.querySelectorAll('button');
-//     let editButton = userInput[0];
-//     let delButton = userInput[1];
-
-let editButton = document.getElementById('edit');
+let titleItem = "";
+let dateItem = "";
+let sumItem = "";
 
 function loadHandler() {
-    let titleItem = "";
-    let dateItem = "";
-    let sumItem = "";
     listEntries();
-
-    let edit = document.getElementById('edit');
 
     addButton.addEventListener('click', () => {
         postDialog.showModal();
@@ -50,7 +40,6 @@ function loadHandler() {
         });
 
         dialogOK.addEventListener('click', () => {
-            console.log(items);
             if(titleItem === "" || dateItem === "" || sumItem === "") { // not every entry filled
                 alert("Missing entries, please fill everything.")
             }
@@ -78,44 +67,67 @@ function loadHandler() {
             postDialog.close();
         })
 
-        postDialog.addEventListener('close', () => {    
-            console.log("closing");
+        postDialog.addEventListener('close', () => {
             listEntries();
         });
     });
 
-    editButton.addEventListener('click', () => {
-        console.log("clicked");
-        postDialog.showModal();
-        let siblingNodes = editButton.parentNode.childNodes;
-        let sibTitle = siblingNodes[0];
-        let sibDate = siblingNodes[1];
-        let sibSum = siblingNodes[2];
-        console.log("=====");
-        console.log(sibTitle);
-        console.log(sibDate);
-        console.log(sibSum);
-        // titleInput.defaultValue = 
+}
+function editItem(index) {
+    postDialog.showModal();
+    titleInput.defaultValue = items[index].title;
+    dateInput.defaultValue = items[index].date;
+    sumInput.defaultValue = items[index].sum;
 
-        // titleInput.addEventListener('change', () => {
-        //     titleItem = DOMPurify.sanitize(titleInput.value);
-        //     if (titleItem === "") {
-        //         return alert("Please enter a title.");
-        //     }
-        // });
-        // dateInput.addEventListener('change', () => {
-        //     dateItem = DOMPurify.sanitize(dateInput.value);
-        //     if (dateItem === "") {
-        //         return alert("Please enter a date.");
-        //     }
-        // });
-        // sumInput.addEventListener('change', () => {
-        //     sumItem = DOMPurify.sanitize(sumInput.value);
-        //     if (sumItem === "") {
-        //         return alert("Please enter a summary.");
-        //     }
-        // });
+    titleItem = items[index].title;
+    dateItem = items[index].date;
+    sumItem = items[index].sum;
+
+    titleInput.addEventListener('change', () => {
+        titleItem = DOMPurify.sanitize(titleInput.value);
+        if (titleItem === "") {
+            return alert("Please enter a title.");
+        }
     });
+    dateInput.addEventListener('change', () => {
+        dateItem = DOMPurify.sanitize(dateInput.value);
+        if (dateItem === "") {
+            return alert("Please enter a date.");
+        }
+    });
+    sumInput.addEventListener('change', () => {
+        sumItem = DOMPurify.sanitize(sumInput.value);
+        if (sumItem === "") {
+            return alert("Please enter a summary.");
+        }
+    });
+
+    dialogOK.addEventListener('click', () => {
+        if(titleItem === "" || dateItem === "" || sumItem === "") { // not every entry filled
+            alert("Missing entries, please fill everything.")
+        }
+        else {
+            items[index].title = titleItem;
+            items[index].date = dateItem;
+            items[index].sum = sumItem;
+            localStorage.setItem("blog-entries", JSON.stringify(items));
+            postDialog.close();
+        }
+    });
+
+    dialogCancel.addEventListener('click', () => {
+        postDialog.close();
+    })
+
+    postDialog.addEventListener('close', () => {
+        listEntries();
+    });
+}
+
+function deleteItem(index) {
+    items.splice(index, 1);
+    localStorage.setItem("blog-entries", JSON.stringify(items));
+    listEntries();
 }
 function listEntries() {
     console.log("listing entries");
@@ -128,8 +140,11 @@ function listEntries() {
         itemTitle = items[i].title;
         itemDate = items[i].date;
         itemSum = items[i].sum;
-        list += "<p class=\"entry\"><div id=\"title\">Post title: " + itemTitle + "</div><div id=\"date\">Post date: " + itemDate + "</div><div id=\"sum\">Post sum: " + itemSum + "</div></p><button id=\"edit\">Edit</button><button id=\"del\">Delete</button><hr />"
+        list += "<p class='entry'><div>Post title: <span id='title'>" + itemTitle + "</span></div><div id='date'>Post date: <span id='title'>" + itemDate + "</span></div><div id='sum'>Post sum: <span id='title'>" + itemSum + "</span></div><button id='edit' onclick='editItem(" + i + ")'>Edit</button><button id='del' onclick='deleteItem(" + i + ")'>Delete</button></p><hr />"
     }
     document.querySelector("#entryList").innerHTML = list;
 }
+
 window.addEventListener('DOMContentLoaded', loadHandler);
+window.editItem = editItem;
+window.deleteItem = deleteItem;
