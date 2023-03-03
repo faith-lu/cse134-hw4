@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="node_modules/dompurify/dist/purify.js"></script>
+        <script type="module" src="src/customdialogs.js"></script>
+    </head>
+    <body>
+        <h1>Part 2 — Custom Dialogs</h1>
+
+        <dialog id="alertDialog">
+            <form method="dialog">
+                <label>Alert pressed!</label>
+                <div>
+                    <button id="okButton">OK</button>
+                </div>
+            </form>
+        </dialog>
+        <button id="alert">Alert</button>
+
+        <dialog id="confirmDialog">
+            <form method="dialog">
+                <label>Do you want to confirm this?</label>
+                <div>
+                    <button id="confirmCancel">Cancel</button>
+                    <button id="confirmOK">OK</button>
+                </div>
+            </form>
+        </dialog>
+        <button id="confirm">Confirm</button>
+
+        <dialog id="promptDialog">
+            <form method="dialog">
+                <label for="promptUserName">What is your name?</label>
+                <input type="text" id="promptUserName" name="promptUserName" />
+                <div>
+                    <button id="promptCancel">Cancel</button>
+                    <button id="promptOK">OK</button>
+                </div>
+            </form>
+        </dialog>
+        <button id="prompt">Prompt</button>
+        <hr />
+        <output id="output"></output>
+
+        <!-- <div id="alertContainer"></div>
+        <div id="confirmContainer"></div>
+        <div id="promptContainer"></div> -->
+
+        <!-- <template>
+            <dialog id="dialog">
+                <form method="dialog">
+                    <label id="dialogLabel"></label>
+                    <div>
+                        <button id="cancelButton">Cancel</button>
+                        <button id="okButton">OK</button>
+                    </div>
+                </form>
+            </dialog>
+
+            <dialog id="confirmDialog">
+                <form method="dialog">
+                    <label>Do you want to confirm this?</label>
+                    <div>
+                        <button id="confirmCancel">Cancel</button>
+                        <button id="confirmOK">OK</button>
+                    </div>
+                </form>
+            </dialog>
+
+            <dialog id="promptDialog">
+                <form method="dialog">
+                    <label for="userName">What is your name?</label>
+                    <input type="text" id="userName" name="userName" />
+                    <div>
+                        <button id="promptCancel">Cancel</button>
+                        <button id="promptOK">OK</button>
+                    </div>
+                </form>
+            </dialog>
+        </template> -->
+    </body>
+</html>
